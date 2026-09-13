@@ -86,8 +86,8 @@ Unlike a single star schema, this model is a true **Galaxy Schema**: multiple fa
 
 RLS was implemented so each user only sees the region(s) they're authorized for, without maintaining a separate role per region.
 
-![RLS_security](Row%20level%20security/RLS%20security.png)
-![RLS_users](Row%20level%20security/RLS%20users.png)
+![RLS_security](Row%20level%20security%20(RLS)/RLS%20security.png)
+![RLS_users](Row%20level%20security%20(RLS)/RLS%20users.png)
 
 A single role, **"regional access"**, was created and applied to both `dim_customer` and `dim_geo` (since region information exists on both tables and both feed into `fact_sales`), using a dynamic lookup against a dedicated `security` table:
 
@@ -140,7 +140,7 @@ Testing was done using **View as roles → regional access + Other user**, enter
 
 ### Page 3 — Inventories
 
-![galaxy_inventories](Dashboards/galaxy%20Inventories.png)
+![galaxy_inventories](Dashboards/galaxy%20inventories.png)
 
 **KPIs:** Inventory Value (74K) · Inventory Turnover Ratio (53.86) · Days of Inventory On Hand (6.78) · Inventory to Sales Ratio (0.14)
 
