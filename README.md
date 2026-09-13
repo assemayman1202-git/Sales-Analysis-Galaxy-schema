@@ -96,7 +96,7 @@ A single role, **"regional access"**, was created and applied to both `dim_custo
 
 `USERPRINCIPALNAME()` returns the signed-in user's email at query time, so the same rule automatically resolves to a different region per user — no need to hard-code or duplicate roles.
 
-![RLS users](Row level security (RLS)/RLS%20users.png)
+![RLS users](Row%20level%20security%20(RLS)/RLS%20users.png)
 
 Testing was done using **View as roles → regional access + Other user**, entering a real email from the `security` table (e.g. `omar.farouk@arka.com`) to simulate that user's session — confirming the model correctly restricted every visual to that user's assigned region only, across all four report pages.
 
@@ -139,7 +139,7 @@ Testing was done using **View as roles → regional access + Other user**, enter
 
 ### Page 3 — Inventories
 
-![galaxy_Inventories](Dashboards/galaxy%20Inventories.png)
+![galaxy_inventories](Dashboards/galaxy%20Inventories.png)
 
 **KPIs:** Inventory Value (74K) · Inventory Turnover Ratio (53.86) · Days of Inventory On Hand (6.78) · Inventory to Sales Ratio (0.14)
 
