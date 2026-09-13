@@ -87,7 +87,7 @@ Unlike a single star schema, this model is a true **Galaxy Schema**: multiple fa
 RLS was implemented so each user only sees the region(s) they're authorized for, without maintaining a separate role per region.
 
 ![RLS_security](Row%20level%20security%20(RLS)/RLS%20security.png)
-![RLS_users](Row%20level%20security%20(RLS)/RLS%20users.png)
+
 
 A single role, **"regional access"**, was created and applied to both `dim_customer` and `dim_geo` (since region information exists on both tables and both feed into `fact_sales`), using a dynamic lookup against a dedicated `security` table:
 
